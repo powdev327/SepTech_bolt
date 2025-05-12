@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #080812;
+  color: #ffffff;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-wave {
+  animation: wave 3s linear infinite;
+}
+
+.shadow-glow-blue {
+  box-shadow: 0 0 15px rgba(0, 207, 255, 0.5);
+}
+
+.shadow-glow-purple {
+  box-shadow: 0 0 15px rgba(162, 57, 202, 0.5);
+}
+
+.shadow-glow-sm {
+  box-shadow: 0 0 10px rgba(0, 207, 255, 0.2);
+}
