@@ -26,13 +26,45 @@ body {
 }
 
 .shadow-glow-blue {
-  box-shadow: 0 0 15px rgba(0, 207, 255, 0.5);
+  box-shadow: 0 0 25px rgba(0, 207, 255, 0.3);
 }
 
 .shadow-glow-purple {
-  box-shadow: 0 0 15px rgba(162, 57, 202, 0.5);
+  box-shadow: 0 0 25px rgba(162, 57, 202, 0.3);
 }
 
 .shadow-glow-sm {
-  box-shadow: 0 0 10px rgba(0, 207, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 207, 255, 0.2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.bg-glass {
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
